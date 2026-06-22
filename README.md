@@ -47,4 +47,40 @@ The repository includes a pre-configured launcher script (**`run.bat`**) that au
 Alternatively, compile manually from your COBOL-enabled terminal prompt:
 ```cmd
 cobc -x -o banking.exe banking.cob
-banking.exe  
+banking.exe
+
+## 🎯 Interface Walkthrough
+
+----------------------------------------
+       MINI CORE BANKING SYSTEM         
+----------------------------------------
+1. Create New Account
+2. Check Balance & Profile
+3. Deposit Funds
+4. Withdraw Funds
+5. Exit System
+Enter your choice (1-5): 
+Transaction Operational Rules:
+Account IDs must conform to a rigid, fixed 5-digit string format (e.g., 12234).
+
+Account Names allocate exactly 20 spaces in the registry database block.
+
+Balances render via numeric editing masks (PIC Z,ZZZ,ZZ9.99) for professional Indian Rupee (INR) output formatting.
+
+## 📚 Repository File Blueprint
+banking.cob – The complete system source code containing the strict multi-division sequence layout.
+
+run.bat – Automated shell script used to map local terminal environments and initialize execution.
+
+README.md – Project overview, core code mechanics breakdown, and documentation.
+
+## 🔮 Future Milestones
+[ ] Implement an automated Interest Accumulation Routine for savings records.
+
+[ ] Integrate an algorithmic Loan Management system with automated EMI amortization scheduling.
+
+[ ] Build a tabular transaction history ledger module.
+
+Developed with 💡 by Karan Pahwa 
+
+Exploring legacy foundations to build better modern fintech systems.
